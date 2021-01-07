@@ -6,11 +6,15 @@ The example included in this repository is configured for the STM32F103C6T8 "Blu
 
 ### Prerequisites:
 - [STM32Cube MCU Package](https://www.st.com/en/embedded-software/stm32cube-mcu-mpu-packages.html)
-    - Requires a signin to ST in order to download.
+    - Requires a sign-in to ST in order to download.
 - ARM embedded toolchain
     - On x86_64 Fedora, run `sudo dnf install arm-none-eabi-gcc arm-none-eabi-binutils arm-none-eabi-newlib` (installs a cross-compilation toolchain).
 - STLink flashing tool
     - On x86_64 Fedora, run `sudo dnf install stlink`.
+- GNU Make
+    - On x86_64 Fedora, run `sudo dnf install make`.
+- tr
+    - On x86_64 Fedora, run `sudo dnf install coreutils` (most likely already installed).
 
 ### Usage
 1. Extract the STM32Cube MCU package, and update the `CUBE_PATH` variable to point to it.
