@@ -15,6 +15,7 @@ SERIES_CPU = cortex-m3
 SERIES_ARCH = armv7-m
 # HAL_DRIVERS should match what's enabled in the HAL config file.
 HAL_DRIVERS = cortex gpio rcc flash
+PREFIX = arm-none-eabi-
 
 ######################
 # Internal Variables #
@@ -33,9 +34,8 @@ SYSTEM_SRC_PATH = $(CMSIS_TREE_DIR)/Source/Templates/system_$(TREE_LOWER).c
 STARTUP_PATH = $(CMSIS_TREE_DIR)/Source/Templates/gcc/startup_$(DEVICE_LOWER).s
 LINKER_SCRIPT_PATH = $(CMSIS_TREE_DIR)/Source/Templates/gcc/linker/$(DEVICE_UPPER)_FLASH.ld
 
-PREFIX = arm-none-eabi
-CC = $(PREFIX)-gcc
-OBJCOPY = $(PREFIX)-objcopy
+CC = $(PREFIX)gcc
+OBJCOPY = $(PREFIX)objcopy
 
 CFLAGS = -Os
 CFLAGS += -Wall
