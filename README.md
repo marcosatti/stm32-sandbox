@@ -20,7 +20,7 @@ The example included in this repository is configured for the STM32F103C6T8 "Blu
 ## Usage
 1. Extract the STM32Cube MCU package, and update the `CUBE_PATH` variable to point to it.
 2. Ensure all other variables in the Makefile are correct (example is configured already for the "Blue Pill" MCU).
-3. Run `make hal_config` to initialize the HAL configuration file, then enable/disable only the drivers listed in the `HAL_DRIVERS` variable within the Makefile. See HAL Config below for the exact list if building the sandbox as is.
+3. Run `make hal_config` to initialize the HAL configuration file (placed in the CONFIG_DIR directory), then enable/disable only the drivers listed in the `HAL_DRIVERS` variable within the Makefile. See HAL Config below for the exact list if building the sandbox as is.
 3. Run `make` to build the program binary, ready to be uploaded to the STM32 device.
 4. Run `make flash` to flash the binary.
 
