@@ -37,7 +37,7 @@ void clock_init(void) {
     HAL_NVIC_SetPriority(SysTick_IRQn, 15, 0);
 }
 
-void gpio_init() {
+void gpio_init(void) {
     __HAL_RCC_GPIOC_CLK_ENABLE();
     GPIO_InitTypeDef GPIO_InitStruct;
     GPIO_InitStruct.Pin = GPIO_PIN_13;
