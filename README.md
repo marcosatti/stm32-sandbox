@@ -3,7 +3,7 @@
 
 STM32 microcontroller template for use with a standard build environment. Does not use any IDE's etc, allowing you to inspect what's going on and learn from it.
 
-The example included in this repository is configured for the STM32F103C6T8 "Blue Pill" device. It blinks the onboard LED (PC13) periodically.
+The example included in this repository is configured for the STM32F103C8T6 "Blue Pill" device. It blinks the onboard LED (PC13) periodically.
 
 ## Prerequisites:
 - [STM32Cube MCU Package](https://www.st.com/en/embedded-software/stm32cube-mcu-mpu-packages.html)
@@ -27,10 +27,12 @@ The example included in this repository is configured for the STM32F103C6T8 "Blu
 ## Resources
 [STM32F1 Series Portal](https://www.st.com/en/microcontrollers-microprocessors/stm32f1-series.html)
 
-[STM32F103C6 ("Blue Pill") Portal](https://www.st.com/en/microcontrollers-microprocessors/stm32f103c6.html)
+[STM32F103C8 ("Blue Pill") Portal](https://www.st.com/en/microcontrollers-microprocessors/stm32f103c8.html)
 
 [STM32CubeF1 Portal](https://www.st.com/en/embedded-software/stm32cubef1.html)  
 (Be sure to see "UM1850 Description of STM32F1 HAL and low-layer drivers 3.0" for the user manual on the HAL layer)
+
+[STM32F103C8T6 ("Blue Pill") Datasheet](https://components101.com/microcontrollers/stm32f103c8t8-blue-pill-development-board)
 
 [Makefile Tutorial/Cheatsheet](https://makefiletutorial.com)
 
